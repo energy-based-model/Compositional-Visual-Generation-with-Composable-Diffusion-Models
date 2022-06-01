@@ -107,7 +107,7 @@
   <div class="row">
     <h2 class="text-center">Method</h2>
     <hr>
-    <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration <math>t</math> and each individual concept <math>c_i</math> to the diffusion model to generate a set of scores <math>\{\epsilon_\theta(\vx_t, t|\vc_1), \epsilon_\theta(\vx_t, t|\vc_n)\}</math>. We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after <math>T</math> iterations.</p>
+    <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration \(t\) and each individual concept \(c_i\) to the diffusion model to generate a set of scores \(\epsilon_\theta(\mathbf{x}_t, t|c_1), \epsilon_\theta(\mathbf{x}_t, t|c_n)\). We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after \(T\) iterations.</p>
     <div class="col-sm-12 text-center">
       <!-- <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:1250px;height:250px;border:0.5px solid gray"> -->
       <!-- <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:1200px;height:250px;"> -->
@@ -127,7 +127,7 @@
   <div class="row">
     <h2 class="text-center">CoLab Demo</h2>
     <hr>
-    <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration <math>t</math> and each individual concept <math>c_i</math> to the diffusion model to generate a set of scores <math>\{\epsilon_\theta(\vx_t, t|\vc_1), \epsilon_\theta(\vx_t, t|\vc_n)\}</math>. We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after <math>T</math> iterations.</p>
+    <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration \(t\) and each individual concept \(c_i\) to the diffusion model to generate a set of scores \(\epsilon_\theta(\mathbf{x}_t, t|c_1), \epsilon_\theta(\mathbf{x}_t, t|c_n)\). We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after \(T\) iterations.</p>
     <div class="col-sm-12 text-center">
       <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
         <source src="website_files/imgs/models-medium.mp4" type="video/mp4">
@@ -243,4 +243,7 @@
 </div>
 
 
-</body></html>
+</body>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</html>
