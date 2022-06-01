@@ -21,6 +21,15 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
+
+    .bibtexsection {
+            font-family: "Courier",monospace;
+            font-size: 16px;
+            white-space: pre;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+
   </style>
   <link rel="stylesheet" href="website_files/font.css">
   <link rel="stylesheet" href="website_files/main.css">
@@ -128,7 +137,7 @@
 
 <div class="container bg-3">
   <div class="row">
-    <h2 class="text-center">CoLab Demo</h2>
+    <h2 class="text-center">Colab Demo</h2>
     <hr>
     <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration \(t\) and each individual concept \(c_i\) to the diffusion model to generate a set of scores \(\{\epsilon_\theta(\mathbf{x}_t, t|c_1), \ldots, \epsilon_\theta(\mathbf{x}_t, t|c_n)\}\). We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after \(T\) iterations.</p>
     <div class="col-sm-12 text-center">
@@ -344,9 +353,9 @@
 
     <div class="container bg-3">
       <div class="row">
-        <h2 class="text-center">Citation</h2>
+        <h2 class="text-center">Bibtex</h2>
         <hr>
-        <div class="alert alert-warning citation">
+        <div class="bibtexsection">
             @inproceedings{liu2022compose,<br>
             &nbsp;&nbsp;title={Compositional Visual Generation with Composable Diffusion Models},<br>
             &nbsp;&nbsp;author={Nan Liu* and Shuang Li* and Yilun Du* and Antonio Torralba and Joshua B. Tenenbaum},<br>
