@@ -45,14 +45,15 @@
 <div class="container bg-3">    
   <div class="row text-center">
 
-<!--    <div class="col-sm-2 col-sm-offset-2">-->
-<!--      <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s"><img height="78" width="120" src="./NeRF-Supervision_files/video-thumb.png" data-nothumb="" style="border: 1px solid;"><br>Overview<br>Video<br></a>-->
-<!--    </div>-->
-    <!-- <div class="col-sm-2">
-      <a href="https://www.icloud.com/keynote/0f5dEmQJx01IvYyBA0xhepAaA#nerf-supervision-public"><img height="78" width="120" src="./NeRF-Supervision_files/slides-thumb.png" data-nothumb="" style="border: 1px solid"><br>Keynote<br>Slides<br></a>
+    <!-- <div class="col-sm-2 col-sm-offset-1">
+      <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s"><img height="78" width="120" src="./NeRF-Supervision_files/video-thumb.png" data-nothumb="" style="border: 1px solid;"><br>Overview<br>Video<br></a>
     </div> -->
-    <div class="col-sm-2 col-sm-offset-3">
-      <a href=""><img height="100" width="78" src="" data-nothumb="" style="border: 1px solid"><br>arxiv 2022<br>Paper<br></a>
+    <div class="col-sm-2 col-sm-offset-2">
+      <a href=""><img height="120" width="120" src="website_files/imgs/website_teaser.png" data-nothumb="" style="border: 1px solid"><br>Demos</a>
+    </div>
+
+    <div class="col-sm-2">
+      <a href=""><img height="100" width="78" src="website_files/imgs/paper_page.png" data-nothumb="" style="border: 1px solid"><br>arxiv 2022<br>Paper<br></a>
     </div>
     <div class="col-sm-2">
       <a href="https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch"><img height="100" width="78" src="website_files/imgs/source_code.png" data-nothumb="" style="border: 1px solid"><br>Source Code<br>Github</a>
@@ -68,22 +69,49 @@
   <div class="row">
     <h2 class="text-center">Demo Video</h2>
     <hr>
-    <div class="row align-items-center">
-        <div class="col justify-content-center text-center">
-            <video width="85%" playsinline="" autoplay="" loop="" preload="" muted="">
-                <source src="website_files/imgs/teaser.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class="col-sm-6 text-center">
+      <p><b>Compose natural language descriptions:</b></p>
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+        <source src="website_files/imgs/teaser.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>    </div>
+    <div class="col-sm-6 text-center">
+      <p><b>Compose objects:</b></p>
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+        <source src="website_files/imgs/teaser.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-6 text-center">
+      <p><b>Compose object relational descriptions:</b></p>
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+        <source src="website_files/imgs/teaser.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>    </div>
+    <div class="col-sm-6 text-center">
+      <p><b>Compose human facial attributes:</b></p>
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+        <source src="website_files/imgs/teaser.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
     </div>
 </div><br>
+
+<br><br>
+
 
 <div class="container bg-3">
   <div class="row">
     <h2 class="text-center">Method</h2>
     <hr>
+    <p>Compositional generation. Our method can compose multiple diffusion models during inference and generate images containing all the concepts described in the inputs without further training. We first send an image from iteration <math>t</math> and each individual concept <math>c_i</math> to the diffusion model to generate a set of scores <math>\{\epsilon_\theta(\vx_t, t|\vc_1), \epsilon_\theta(\vx_t, t|\vc_n)\}</math>. We then compose different concepts using the proposed compositional operators, such as conjunction, to denoise the generated images. The final image is obtained after <math>T</math> iterations.</p>
     <div class="col-sm-12 text-center">
       <!-- <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:1250px;height:250px;border:0.5px solid gray"> -->
-      <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:1250px;height:250px;">
+      <!-- <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:1200px;height:250px;"> -->
+      <img src="website_files/imgs/models-medium.gif" alt="Computer man" style="width:100%;">
     </div>
   </div>
 </div><br>
@@ -99,7 +127,7 @@
           accurately captures text details, such as the "overwater bungalows" in the third example.
      </p>
     <div class="col-sm-12 text-center">
-      <img src="website_files/imgs/glide.png" class="img-fluid" alt="glide" style="width:100%; height:100%">
+      <img src="website_files/imgs/glide.png" class="img-fluid" alt="glide" style="width:80%">
     </div>
   </div>
 
@@ -133,7 +161,7 @@
          The baselines either fail to compose attributes (StyleGAN2 and LACE) or generate low-quality images (EBM).
       </p>
       <div class="col-sm-12 text-center">
-        <img src="website_files/imgs/ffhq.png" class="img-fluid" alt="ffhq" style="width:100%; height:100%">
+        <img src="website_files/imgs/ffhq.png" class="img-fluid" alt="ffhq" style="width:80%">
       </div>
     </div>
 </div><br>
@@ -141,16 +169,37 @@
 
 <div class="container bg-3">
   <div class="row">
-    <h2 class="text-center">Failure Cases</h2>
+    <h2 class="text-center">Result Analysis</h2>
     <hr>
      <p>
-       <b>Failure Cases</b>. There are three main types of failures:<br>
-       <b>(b) The pre-trained diffusion model does not understand certain concepts, such as "person".</b><br>
-       <b>(c) The pre-trained duffision model confuses objects' attributes.</b><br>
-       <b>(d) The composition fails. This usually happens when the objects are in the center of the images.</b>
+       <b>Success Examples.</b> In each example, the first two images are generated conditioned on each individual sentence description and the last image is generated by composing the sentences.
      </p>
+    <div class="col-sm-6 text-center">
+      <img src="website_files/imgs/success_cases.png" class="img-fluid" alt="failures" style="width:100%">
+    </div>
+    <div class="col-sm-6 text-center">
+      <img src="website_files/imgs/success_cases2.png" class="img-fluid" alt="failures" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <hr>
+    <p>
+       <b>Failure Cases</b>. There are three main types of failures:<br>
+       (1) The pre-trained diffusion model does not understand certain concepts, such as "person".<br>
+       (2) The pre-trained duffision model confuses objects' attributes.<br>
+       (3) The composition fails. This usually happens when the objects are in the center of the images.
+     </p>
+     <br>
+     <div class="col-sm-6 text-center">
+      <img src="website_files/imgs/failure1.png" class="img-fluid" alt="failures" style="width:90%">
+    </div>
+    <div class="col-sm-6 text-center">
+      <img src="website_files/imgs/failure2.png" class="img-fluid" alt="failures" style="width:90%">
+    </div>
+    <br>
     <div class="col-sm-12 text-center">
-      <img src="website_files/imgs/failure_glide_cases.png" class="img-fluid" alt="failures" style="width:100%; height:100%">
+      <img src="website_files/imgs/failure3.png" class="img-fluid" alt="failures" style="width:95%">
     </div>
   </div>
 </div><br>
