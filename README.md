@@ -1,3 +1,3 @@
-# Compositional-Visual-Generation-with-Composable-Diffusion-Models
+# compose-diffusion-models
 
-https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/
+https://shuangli59.github.io/compose-diffusion-models/

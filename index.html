@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="description" content="Compositional Visual Generation with Composable Diffusion Models">
-  <meta name="keywords" content="EBM,Diffusion,Generative Models">
+  <meta name="keywords" content="EBM,Diffusion,GenerativeModels">
   <title>Compositional Visual Generation with Composable Diffusion Models</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,19 +45,19 @@
 <div class="container bg-3">    
   <div class="row text-center">
 
-    <div class="col-sm-2 col-sm-offset-2">
-      <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s"><img height="78" width="120" src="./NeRF-Supervision_files/video-thumb.png" data-nothumb="" style="border: 1px solid;"><br>Overview<br>Video<br></a>
-    </div>
+<!--    <div class="col-sm-2 col-sm-offset-2">-->
+<!--      <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s"><img height="78" width="120" src="./NeRF-Supervision_files/video-thumb.png" data-nothumb="" style="border: 1px solid;"><br>Overview<br>Video<br></a>-->
+<!--    </div>-->
     <!-- <div class="col-sm-2">
       <a href="https://www.icloud.com/keynote/0f5dEmQJx01IvYyBA0xhepAaA#nerf-supervision-public"><img height="78" width="120" src="./NeRF-Supervision_files/slides-thumb.png" data-nothumb="" style="border: 1px solid"><br>Keynote<br>Slides<br></a>
     </div> -->
-    <div class="col-sm-2">
-      <a href="https://arxiv.org/abs/2203.01913"><img height="100" width="78" src="" data-nothumb="" style="border: 1px solid"><br>arxiv 2022<br>Paper<br></a>
+    <div class="col-sm-2 col-sm-offset-3">
+      <a href=""><img height="100" width="78" src="" data-nothumb="" style="border: 1px solid"><br>arxiv 2022<br>Paper<br></a>
     </div>
-    <div class="col-sm-2" "="">
+    <div class="col-sm-2">
       <a href="https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch"><img height="100" width="78" src="website_files/imgs/source_code.png" data-nothumb="" style="border: 1px solid"><br>Source Code<br>Github</a>
     </div>
-    <div class="col-sm-2" "="">
+    <div class="col-sm-2">
       <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing"><img height="78" width="120" src="website_files/imgs/colab.png" data-nothumb="" style="border: 1px solid"><br>Demo Colab:<br>Composable Diffusion Models</a>
     </div>
 
@@ -66,15 +66,16 @@
 
 <div class="container bg-3">
   <div class="row">
-    <h2 class="text-center">Demo Videos</h2>
+    <h2 class="text-center">Demo Video</h2>
     <hr>
-    <div class="col-sm-12 text-center" style="margin-top: 1em;">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="./NeRF-Supervision_files/_zN-wVwPH1s.html" allowfullscreen=""></iframe>
-      </div>
+    <div class="row align-items-center">
+        <div class="col justify-content-center text-center">
+            <video width="85%" playsinline="" autoplay="" loop="" preload="" muted="">
+                <source src="website_files/imgs/teaser.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-  </div>
-</div>
+</div><br>
 
 <div class="container bg-3">
   <div class="row">
@@ -87,16 +88,70 @@
   </div>
 </div><br>
 
-<div class="container bg-3">
-  <div class="row">
-    <h2 class="text-center">Demo Colab</h2>
-    <hr>
-</div><br>
-
-<div class="container bg-3">    
+  <div class="container bg-3">
   <div class="row">
     <h2 class="text-center">More Results</h2>
     <hr>
+     <p>
+       <b>Composing Language Descriptions.</b> We develop Composed GLIDE (Ours), a version of GLIDE
+          that utilizes our compositional operators to combine textual descriptions, without further training. We compare it
+          to the original GLIDE, which directly encodes the descriptions as a single long sentence. Our approach more
+          accurately captures text details, such as the "overwater bungalows" in the third example.
+     </p>
+    <div class="col-sm-12 text-center">
+      <img src="website_files/imgs/glide.png" class="img-fluid" alt="glide" style="width:100%; height:100%">
+    </div>
+  </div>
+
+    <div class="row">
+      <hr>
+      <p>
+       <b>Composing Objects.</b> Our method can compose multiple objects while baselines either miss or generate more objects.
+      </p>
+      <div class="col-sm-12 text-center">
+        <img src="website_files/imgs/clevr_object.png" class="img-fluid" alt="clevr_objects" style="width:100%; height:100%">
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+      <p>
+       <b>Composing Visual Relations.</b> Image generation results on the relational CLEVR dataset.
+      Our model is trained to generate images conditioned on a single object relation, but during inference, our model can compose multiple object relations.
+      The baseline methods either miss objects or generate more object relations.
+      </p>
+      <div class="col-sm-12 text-center">
+        <img src="website_files/imgs/clevr_object.png" class="img-fluid" alt="clevr_relations" style="width:100%; height:100%">
+      </div>
+    </div>
+    <div class="row">
+      <hr>
+      <p>
+        <b>Composing Facial Attributes.</b> Image generation results on the FFHQ dataset.
+        Our model is trained to generate images conditioned on a single human facial attribute, but during inference,
+         our model can recursively compose multiple facial attributes using the proposed compositional operators.
+         The baselines either fail to compose attributes (StyleGAN2 and LACE) or generate low-quality images (EBM).
+      </p>
+      <div class="col-sm-12 text-center">
+        <img src="website_files/imgs/ffhq.png" class="img-fluid" alt="ffhq" style="width:100%; height:100%">
+      </div>
+    </div>
+</div><br>
+
+
+<div class="container bg-3">
+  <div class="row">
+    <h2 class="text-center">Failure Cases</h2>
+    <hr>
+     <p>
+       <b>Failure Cases</b>. There are three main types of failures:<br>
+       <b>(b) The pre-trained diffusion model does not understand certain concepts, such as "person".</b><br>
+       <b>(c) The pre-trained duffision model confuses objects' attributes.</b><br>
+       <b>(d) The composition fails. This usually happens when the objects are in the center of the images.</b>
+     </p>
+    <div class="col-sm-12 text-center">
+      <img src="website_files/imgs/failure_glide_cases.png" class="img-fluid" alt="failures" style="width:100%; height:100%">
+    </div>
   </div>
 </div><br>
 
@@ -104,17 +159,10 @@
   <div class="row">
     <h2 class="text-center">Citation</h2>
     <hr>
-    <div class="alert alert-warning citation">
-        @inproceedings{yen2022nerfsupervision,<br>
-        &nbsp;&nbsp;title={{NeRF-Supervision}: Learning Dense Object Descriptors from Neural Radiance Fields},<br>
-        &nbsp;&nbsp;author={Lin Yen-Chen and Pete Florence and Jonathan T. Barron and Tsung-Yi Lin and Alberto Rodriguez and Phillip Isola},<br>
-        &nbsp;&nbsp;booktitle={IEEE Conference on Robotics and Automation ({ICRA})},<br>
-        &nbsp;&nbsp;year={2022}<br>
-        }
-    </div>
   </div>
 </div><br><br>
 
+</div>
 
 
 </body></html>
