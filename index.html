@@ -75,37 +75,32 @@
   <div class="row">
     <h2 class="text-center">Video Demos</h2>
     <hr>
-    <div class="col-sm-6 text-center">
+    <div class="col-sm-12 text-center">
       <p><b>Compose natural language descriptions:</b></p>
       <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
         <source src="website_files/imgs/teaser_glide.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
-    <div class="col-sm-6 text-center">
-      <p><b>Compose objects:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
-        <source src="website_files/imgs/clevr_pos_teaser.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-    </div>
   </div>
   <br>
-
-  <div class="row">
-    <div class="col-sm-6 text-center">
-      <p><b>Compose object relational descriptions:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
-        <source src="website_files/imgs/clevr_rel_teaser.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          <p><b>Compose objects:</b></p>
+            <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
+            <source src="website_files/imgs/clevr_pos_teaser.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
-    <div class="col-sm-6 text-center">
-      <p><b>Compose human facial attributes:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
-        <source src="website_files/imgs/ffhq_teaser.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+          <p><b>Compose object relational descriptions:</b></p>
+          <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
+            <source src="website_files/imgs/clevr_rel_teaser.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
     </div>
 </div><br>
 
@@ -121,15 +116,14 @@
                     <span><strong>Text Prompt: </strong></span>
                     <label for="composed_glide">
                         <select id='composed_glide' class="dropselect" style="text-align: center" name="composed_glide_generation" onchange="setImage(this);">
-                            <option value="website_files/imgs/a_dog_AND_the_sky.png" selected="">A dog AND the sky</option>
-                            <option value="website_files/imgs/a_horse_AND_a_yellow_flower_field.png">A horse AND a yellow flower field</option>
+                            <option value="website_files/imgs/a_horse_AND_a_yellow_flower_field.png" selected="">A horse AND a yellow flower field</option>
                             <option value="website_files/imgs/a_train_on_a_bridge_AND_a_river_under_the_bridge.png">A train on a bridge AND a river under the bridge</option>
                         </select>
                     </label>
                 </div>
                 <div class="row align-items-center">
                     <div class="col justify-content-center text-center">
-                        <img src="website_files/imgs/a_dog_AND_the_sky.png"
+                        <img src="website_files/imgs/a_horse_AND_a_yellow_flower_field.png"
                              class="img-fluid" alt="" style="width:100%; height:100%" name="image-swap-1">
                     </div>
                 </div>
