@@ -21,8 +21,13 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-
   </style>
+<script>
+    function setImage(select){
+       var image = document.getElementsByName("image-swap-1")[0];
+       image.src = select.options[select.selectedIndex].value;
+    }
+</script>
   <link rel="stylesheet" href="website_files/font.css">
   <link rel="stylesheet" href="website_files/main.css">
 </head>
@@ -106,6 +111,33 @@
 
 <br><br>
 
+<div class="container">
+    <h2 id="interactive_demo" class="text-center">Interactive Demo</h2>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <div class="section">
+                <div class="section" style="text-align: center">
+                    <span><strong>Text Prompt: </strong></span>
+                    <label for="composed_glide">
+                        <select id='composed_glide' class="dropselect" style="text-align: center" name="composed_glide_generation" onchange="setImage(this);">
+                            <option value="website_files/imgs/a_dog_AND_the_sky.png">A dog AND the sky</option>
+                            <option value="website_files/imgs/a_horse_AND_a_yellow_flower_field.png" selected="">A horse AND a yellow flower field</option>
+                            <option value="website_files/imgs/a_train_on_a_bridge_AND_a_river_under_the_bridge.png">A train on a bridge AND a river under the bridge</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col justify-content-center text-center">
+                        <img src="website_files/imgs/a_dog_AND_the_sky.png"
+                             class="img-fluid" alt="" style="width:100%; height:100%" name="image-swap-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><br>
 
 <div class="container bg-3">
   <div class="row">
