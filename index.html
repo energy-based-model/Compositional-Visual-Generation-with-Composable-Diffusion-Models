@@ -54,11 +54,8 @@
     <!-- <div class="col-sm-2 col-sm-offset-1">
       <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s"><img height="78" width="120" src="./NeRF-Supervision_files/video-thumb.png" data-nothumb="" style="border: 1px solid;"><br>Overview<br>Video<br></a>
     </div> -->
+    
     <div class="col-sm-2 col-sm-offset-2">
-      <a href=""><img height="120" width="120" src="website_files/imgs/website_teaser.png" data-nothumb="" style="border: 1px solid"><br>Demos</a>
-    </div>
-
-    <div class="col-sm-2">
       <a href=""><img height="100" width="78" src="website_files/imgs/paper_page.png" data-nothumb="" style="border: 1px solid"><br>arxiv 2022<br>Paper<br></a>
     </div>
     <div class="col-sm-2">
@@ -66,6 +63,9 @@
     </div>
     <div class="col-sm-2">
       <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing"><img height="78" width="120" src="website_files/imgs/colab.png" data-nothumb="" style="border: 1px solid"><br>Demo Colab:<br>Composable Diffusion Models</a>
+    </div>
+    <div class="col-sm-2">
+      <a href="#results"><img height="120" width="120" src="website_files/imgs/website_teaser.png" data-nothumb="" style="border: 1px solid"><br>Results</a>
     </div>
 
   </div>
@@ -77,14 +77,14 @@
     <hr>
     <div class="col-sm-6 text-center">
       <p><b>Compose natural language descriptions:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
         <source src="website_files/imgs/teaser_glide.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
     <div class="col-sm-6 text-center">
       <p><b>Compose objects:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
         <source src="website_files/imgs/clevr_pos_teaser.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
@@ -95,14 +95,14 @@
   <div class="row">
     <div class="col-sm-6 text-center">
       <p><b>Compose object relational descriptions:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
         <source src="website_files/imgs/ffhq_teaser.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
     <div class="col-sm-6 text-center">
       <p><b>Compose human facial attributes:</b></p>
-      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive" controls="">
+      <video autoplay="" loop="" muted="" playsinline="" class="img-responsive">
         <source src="website_files/imgs/ffhq_teaser.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
@@ -176,7 +176,7 @@
 
   <div class="container bg-3">
   <div class="row">
-    <h2 class="text-center">More Results</h2>
+    <h2 class="text-center" id="results">More Results</h2>
     <hr>
      <p>
        <b>Composing Language Descriptions.</b> We develop Composed GLIDE (Ours), a version of GLIDE
@@ -185,7 +185,7 @@
           accurately captures text details, such as the "overwater bungalows" in the third example.
      </p>
     <div class="col-sm-12 text-center">
-      <img src="website_files/imgs/glide.png" class="img-fluid" alt="glide" style="width:90%">
+      <img src="website_files/imgs/glide.png" class="img-fluid" alt="glide" style="width:88%">
     </div>
   </div>
 
@@ -266,8 +266,12 @@
        <b>Interesting Examples</b>.
      </p>
      <br>
-     <div class="col-sm-12 text-center">
+     <div class="col-sm-6 text-center">
       <img src="website_files/imgs/interesting_cases.png" class="img-fluid" alt="failures" style="width:70%">
+    </div>
+
+    <div class="col-sm-6 text-center">
+      <img src="website_files/imgs/interesting_cases2.png" class="img-fluid" alt="failures" style="width:70%">
     </div>
   </div>
 </div><br>
@@ -276,7 +280,31 @@
       <div class="container bg-3" id="Related">
         <h2 class="text-center">Related Projects</h2>
           <hr>
+            
+
             <div class="row vspace-top">
+              <div class="col-sm-3">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="website_files/imgs/clevr_teaser.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="col-sm-9">
+                  <div class="paper-title">
+                      <a href="https://composevisualrelations.github.io/">Learning to Compose Visual Relations</a>
+                  </div>
+                  <div>
+                     We propose to represent each relation as an unnormalized density (an energy-based model),
+                      enabling us to compose separate relations in a factorized manner.
+                      We show that such a factorized decomposition allows the model to both generate and edit scenes that have multiple sets of relations more faithfully.
+                      We further show that decomposition enables our model to effectively understand the underlying relational scene structure.
+                  </div>
+              </div>
+          </div>
+          <br>
+
+        
+          <div class="row vspace-top">
                 <div class="col-sm-3">
                     <img src="website_files/imgs/comet_teaser.gif" class="img-fluid" alt="comet" style="width:100%">
                 </div>
@@ -293,29 +321,12 @@
                         components discovered by other instances of COMET.
                     </div>
                 </div>
-            </div>
-            <br>
-          <div class="row vspace-top">
-              <div class="col-sm-3">
-                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                    <source src="website_files/imgs/clevr_teaser.mp4" type="video/mp4">
-                </video>
-              </div>
+          </div>
+          
+          
 
-            <div class="col-sm-9">
-                <div class="paper-title">
-                    <a href="https://composevisualrelations.github.io/">Learning to Compose Visual Relations</a>
-                </div>
-                <div>
-                   We propose to represent each relation as an unnormalized density (an energy-based model),
-                    enabling us to compose separate relations in a factorized manner.
-                    We show that such a factorized decomposition allows the model to both generate and edit scenes that have multiple sets of relations more faithfully.
-                    We further show that decomposition enables our model to effectively understand the underlying relational scene structure.
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row vspace-top">
+          <br>
+          <div class="row vspace-top">
             <div class="col-sm-3">
                 <img src="website_files/imgs/comp_cartoon.png" class="img-fluid" alt="ffhq" style="width:100%">
             </div>
@@ -332,47 +343,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <div class="row vspace-top">
-            <div class="col-sm-3">
-                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                    <source src="website_files/imgs/uncond_gen_half.mp4" type="video/mp4">
-                </video>
-            </div>
 
-            <div class="col-sm-9">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2012.01316">Improved Contrastive Divergence Training of Energy Based Models</a>
-                </div>
-                <div>
-                    We show that the traditional contrastive divergence training objective used to train EBMs
-                    is omits a important gradient term. We propose a loss to represent this missing gradient
-                    and propose additional tricks to improve EBM training. We show that our resultant models
-                    are able to generate high resolutions images and are further able to compose with each
-                    other.
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row vspace-top">
-            <div class="col-sm-3">
-                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                    <source src="website_files/imgs/half.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div class="col-sm-9">
-                <div class="paper-title">
-                    <a href="https://openai.com/blog/energy-based-models/">Implicit Generation and Generalization with Energy Based Models</a>
-
-                </div>
-                <div>
-                    We introduce a method to scale EBM training to modern neural network architectures.
-                    We show that such trained EBMs have a set of unique properties, enabling model robustness,
-                    image and trajectory modeling, continual learning and compositional visual generation.
-                </div>
-            </div>
-        </div>
     </div>
     <br>
 
@@ -395,7 +366,7 @@
         <h2 class="text-center">Acknowledgement</h2>
         <hr>
         <p>Thanks <a href="https://baulab.info/">David Bau</a> for proofreading the paper and providing suggestions,
-            and <a href="https://www.linkedin.com/in/markchen90">Mark Chen</a> for running DALLE-2 examples for our paper.
+            and <a href="https://scholar.google.com/citations?user=5fU-QMwAAAAJ&hl=en">Mark Chen</a> for running DALLE-2 examples for our paper.
             This webpage template was recycled from <a href="https://yenchenlin.me/nerf-supervision/">here</a>. </p>
       </div>
     </div><br><br>
