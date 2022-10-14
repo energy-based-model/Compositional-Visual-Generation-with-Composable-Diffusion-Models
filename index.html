@@ -92,44 +92,30 @@
 <div class="container bg-3">
     <hr>
     <div class="row">
-        <h2 class="text-center">Stable Diffusion Demos - AND + NOT (a.k.a. negative prompts) </h2>
+        <h2 class="text-center">Stable Diffusion Demos - <span class="and">AND</span> + <span class="not">NOT</span> (a.k.a. negative prompts) </h2>
         <br />
         <p>
-            <b>Compositional Generation using Stable Diffusion.</b> Our proposed Conjunction (AND) and Negation (NOT)
+            <b>Compositional Generation using Stable Diffusion.</b> Our proposed Conjunction (<span class="and">AND</span>) and Negation (<span class="not">NOT</span>)
             can be applied to conditional diffusion models for compositional generation. Both operators are added into <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a>!
-            Corresponding pages are as follows: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/c26732fbee2a57e621ac22bf70decf7496daa4cd">Conjunction (AND) </a>  and
-            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Negative-prompt">Negation (NOT)</a>.
+            Corresponding pages are as follows: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/c26732fbee2a57e621ac22bf70decf7496daa4cd">Conjunction (<span class="and">AND</span>) </a>  and
+            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Negative-prompt">Negation (<span class="not">NOT</span>)</a>.
         </p>
         <hr>
-        <div class="col-sm-6 text-center">
-            <strong>Prompts: </strong>
-            <p>"A stone castle surrounded by lakes and trees, fantasy, wallpaper, concept art, extremely detailed", "Black and white"</p>
-            <strong>Negative Prompts: </strong>
-            <p>None</p>
-            <img src="website_files/imgs/videos/example1_A.gif" alt="">
+        <div class="col-sm-3 text-center">
+            <img src="website_files/imgs/videos/example2_A.gif" class="stable_video" alt="">
+            <p>"mystical trees" <span class="and">AND</span> "A magical pond" <span class="and">AND</span> "Dark"</p>
         </div>
-        <div class="col-sm-6 text-center">
-            <strong>Prompts: </strong>
-            <p>"A stone castle surrounded by lakes and trees, fantasy, wallpaper, concept art, extremely detailed"</p>
-            <strong>Negative Prompts: </strong>
-            <p>"Black and white"</p>
-            <img src="website_files/imgs/videos/example1_N.gif" alt="">
+        <div class="col-sm-3 text-center">
+            <img src="website_files/imgs/videos/example2_N.gif" class="stable_video" alt="">
+            <p>"mystical trees" <span class="and">AND</span> "A magical pond" <span class="and">AND</span> <span class="not">NOT</span> "Dark"</p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 text-center">
-            <strong>Prompts: </strong>
-            <p>"mystical trees", "A magical pond", "Dark"</p>
-            <strong>Negative Prompts: </strong>
-            <p>None</p>
-            <img src="website_files/imgs/videos/example2_A.gif" alt="">
+        <div class="col-sm-3 text-center">
+            <img src="website_files/imgs/videos/example1_A.gif" class="stable_video" alt="">
+            <p>"A stone castle surrounded by lakes and trees, fantasy, wallpaper, concept art, extremely detailed" <span class="and">AND</span> "Black and white"</p>
         </div>
-        <div class="col-sm-6 text-center">
-            <strong>Prompts: </strong>
-            <p>"mystical trees", "A magical pond"</p>
-            <strong>Negative Prompts: </strong>
-            <p>"Dark"</p>
-            <img src="website_files/imgs/videos/example2_N.gif" alt="">
+        <div class="col-sm-3 text-center">
+            <img src="website_files/imgs/videos/example1_N.gif" class="stable_video" alt="">
+            <p>"A stone castle surrounded by lakes and trees, fantasy, wallpaper, concept art <span class="and">AND</span> extremely detailed" <span class="and">AND</span> <span class="not">NOT</span> "Black and white"</p>
         </div>
     </div>
 </div>

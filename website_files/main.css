@@ -16,3 +16,17 @@ body {
 .container {
     max-width: 1100px;
 }
+
+.stable_video {
+    max-width: 100%; /* You can set the dimensions to whatever you want */
+    height: auto;
+    object-fit: cover;
+}
+
+.and {
+    color: red;
+}
+
+.not {
+    color: red;
+}
